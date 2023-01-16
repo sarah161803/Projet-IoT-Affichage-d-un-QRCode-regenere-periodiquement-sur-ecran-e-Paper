@@ -68,6 +68,25 @@ Le respect de la vie privée est un enjeu crucial pour tout service qui génère
 **Batterie / Alimentation :** Pour alimenter l'écran e-paper et les autres composants.
 
 
+## Le coût de la BOM de votre produit :
+
+On a réalisé le prototype à l’aide d’un boîtier idosens comprenant déjà un écran e paper, un pcb et un boitier. Nous allons donc développer le coût de chaque composant si on devait le réaliser en gros. Dans le cas de la création de 5 000 boîtiers : 
+
+
+**Coût du boîtier en plastique :** Environ 0,50 € par unité, soit un coût total de 2500 € pour 5000 exemplaires.
+
+
+**Coût du PCB :** Environ 5 € par unité, soit un coût total de 25 000 € pour 5000 exemplaires.
+
+
+**Coût de l'écran e-paper :** Environ 15 € par unité, soit un coût total de 75 000 € pour 5000 exemplaires.
+
+
+**Coûts de fabrication :** Environ 10 € par unité, soit un coût total de 50 000 € pour 5000 exemplaires.
+
+
+
+
 
 
 
