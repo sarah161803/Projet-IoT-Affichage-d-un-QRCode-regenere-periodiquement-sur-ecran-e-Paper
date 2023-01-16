@@ -120,7 +120,11 @@ Le Schéma suivante explique le logiciel embarqué implémenter dans le boîtier
 
 ![Schema explicatif](Schema_explicatif.jpg)
 
-## 
+## Les métriques logiciel du logiciel embarqué : 
+
+## Analyse du cycle de vie du produit : 
+
+
 
 
 
