@@ -91,6 +91,20 @@ Le coût de certification ETSI pour un produit peut varier en fonction de plusie
 
 Concernant les coûts de certification Lora Alliance, on peut estimer à environ 2500€ la certification. 
 
+## Une implémentation du logiciel embarqué de l’objet QRCode generation : 
+
+Voici une implémentation possible d'un logiciel embarqué pour génèrer un QR code:
+
+-Intégrer une bibliothèque de génération de QR code, comme QRgen, à notre projet.
+-Utiliser l’écran Idosens pour afficher le QR code généré.
+-Utiliser le protocole LoraWan pour recevoir l’URL et envoyer le QR code  qui correspond à l’URL signé à l’écran Idosens .
+-Dans notre code, créer une fonction pour générer le QR en utilisant la bibliothèque de génération de QR code.
+-Utiliser la fonction pour générer le QR code avec les données souhaitées dans notre cas une URL qui contient une signature,l'identifiant de l'écran Idosens et une date calculée depuis l'epoch de Linux.
+-Afficher le QR code généré sur l'écran Isodense 
+
+Il est important de noter que ceci n'est qu'une implémentation possible et qu'il peut y avoir des étapes supplémentaires.Il est également important de suivre les réglementations de l'utilisation de QR code en France et de suivre les normes de sécurité appropriées.
+
+
 
 
 
