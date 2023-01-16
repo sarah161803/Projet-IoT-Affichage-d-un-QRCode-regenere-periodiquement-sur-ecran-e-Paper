@@ -131,7 +131,7 @@ Le format de messages uplink et downlink échangés pour les objets LoRaWAN est 
 
 ## Estimation de la durée de vie de la batterie du produit : 
 
-Notre objet peut fonctionner sous batterie cependant , Il est difficile de donner une estimation précise de la durée de vie de la batterie sans plus d'informations sur les spécifications de l'objet, comme sa consommation d'énergie et la capacité de batterie.  Cependant, il est possible de faire des hypothèses. 
+Notre objet peut fonctionner sous batterie cependant , Il est difficile de donner une estimation précise de la durée de vie de la batterie sans plus d'informations sur les spécifications de l'objet, comme sa consommation d'énergie et la capacité de batterie.  Cependant, il est possible de faire des hypothèses :  
   - Si le boîtier utilise un débit de données de 0.3 kbps, une fréquence de transmission de 1 fois par jour, une puissance d'émission de 14 dBm et une capacité de batterie de 2000mAh, on peut estimer que la durée de vie de la batterie est  d'environ 8 ans.
   - Si le boitier utilise un débit de données de 0.3 kbps, une fréquence de transmission de 1 fois par heure, une puissance d'émission de 14 dBm et une capacité de batterie de 2000 mAh, on peut dire que le batterie à une durée de vie de la batterie d'environ 6 mois.
   - Si l'objet utilise un débit de données de 0.3 kbps, une fréquence de transmission de 1 fois par minute, une puissance d'émission de 14 dBm et une capacité de batterie de 2000 mAh,on peut dire que le batterie à une durée de vie de la batterie d'environ 6 mois.
