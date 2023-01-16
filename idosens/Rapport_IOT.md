@@ -39,6 +39,20 @@ Ensemble, ces éléments forment un système qui permet de collecter des donnée
 
 On envoie les données cryptées avec une clef de hachage. On envoie un URL qui contient l’heure en seconde depuis l’epoch de Linux, l’identifiant de l’écran idosens signé. On chiffre l’URL avec un clé globale, ce qui permet de protéger les données envoyées de manière efficace lorsqu'elles sont transmises. Cela implique l'utilisation d'une clé de chiffrement unique pour chiffrer toutes les données, plutôt que d'utiliser des clés différentes pour chaque session de communication ou pour chaque QR code. Cela rend le déchiffrement des données plus difficile pour les personnes non autorisées, car ils doivent d'abord découvrir la clé de chiffrement globale avant de pouvoir accéder aux données.
 
+## Le respect de la vie privée du service (RGPD) : 
+
+Le respect de la vie privée est un enjeu crucial pour tout service qui génère des QR codes avec LoRaWAN, et il est important de prendre en compte les différents risques d'atteinte à la vie privée qui peuvent survenir dans ce cas : 
+
+
+**Stockage des données :** Les QR codes générés peuvent contenir des informations sensibles, il est important de s'assurer que ces données sont stockées de manière sécurisée. L’URL qu’on envoie est un URL signé donc elle est difficile d'accéder au URL.  
+  
+  
+**Vie privée des utilisateurs :** Il est important de s'assurer que les QR codes ne sont pas utilisés pour surveiller les utilisateurs de manière non autorisée. Notre produit n’atteint pas la  vie privée des utilisateurs du boîtier puisque la seule information qui transite est que le qr code a été flashé. On pourrait imaginer un scénario où le système qui envoie les qr codes se fait hacker et enverrait des qr codes endommagés. Cependant, cela ne concerne pas notre programme qui gère la liaison entre le serveur et le boîtier.
+  
+  
+**Prévention de la fuite des données :** les données stockées dans les QR codes ne sont pas diffusées à des tiers non autorisés. 
+
+
 
 
 
