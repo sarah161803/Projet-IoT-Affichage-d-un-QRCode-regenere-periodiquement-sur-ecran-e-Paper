@@ -127,7 +127,7 @@ Le Schéma suivante explique le logiciel embarqué implémenter dans le boîtier
 ## Les métriques logiciel du logiciel embarqué : 
 
 
-## La durée de vie de la batterie du produit: 
+## La durée de vie de la batterie du produit : 
 
 
 ## Analyse du cycle de vie du produit : 
