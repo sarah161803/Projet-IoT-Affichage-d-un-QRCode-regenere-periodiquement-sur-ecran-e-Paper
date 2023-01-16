@@ -120,7 +120,7 @@ Voici une implémentation possible d'un logiciel embarqué pour générer le QR 
 
 - Afficher le QR code généré sur l'écran Isodense 
 
-Le Schéma suivante explique le logiciel embarqué implémenter dans le boîtier 
+Le schéma suivant montre le logiciel embarqué implémenter dans le boîtier 
 
 ![Schema explicatif](Schema_explicatif.jpg)
 
@@ -160,7 +160,7 @@ Les étapes clés de l'ACV comprennent l'acquisition des matières premières, l
     - Le boîtier en plastique, le PCB et l'écran e-paper peuvent être recyclés pour réutiliser les matières premières. Il ne faut cependant pas oublier que le recyclage est coûteux et pas toujours optimal.
     - Les consommateurs peuvent également choisir de donner leur produit en fin de vie à des organisations caritatives ou à des programmes de recyclage.
   
-Donc notre produit utilise des matériaux recyclables, à une conception pour une longue durée de vie,facile à réparer et de recycler.
+Donc notre produit utilise des matériaux recyclables, à une conception pour une longue durée de vie,facile à réparer et à recycler.
 
 ## Recherche et analyse des produits concurrents : 
 
