@@ -101,7 +101,7 @@ Voici une implémentation possible d'un logiciel embarqué pour générer le QR 
 - Utiliser l’écran Idosens pour afficher le QR code généré.
 
 
-- Utiliser le protocole LoraWan pour recevoir l’URL et envoyer le QR code  qui correspond à l’URL signé à l’écran Idosens .
+- Utiliser le protocole LoraWan pour envoyer une signature pour signer un URL qu'on transforme en QR code .
 
 
 - Dans notre code, créer une fonction pour générer le QR en utilisant la bibliothèque de génération de QR code.
@@ -114,8 +114,6 @@ Voici une implémentation possible d'un logiciel embarqué pour générer le QR 
 
 - Afficher le QR code généré sur l'écran Isodense 
 
-
-Il est important de noter que ceci n'est qu'une implémentation possible et qu'il peut y avoir des étapes supplémentaires.Il est également important de suivre les réglementations de l'utilisation de QR code en France et de suivre les normes de sécurité appropriées.
 Le Schéma suivante explique le logiciel embarqué implémenter dans le boîtier 
 
 ![Schema explicatif](Schema_explicatif.jpg)
