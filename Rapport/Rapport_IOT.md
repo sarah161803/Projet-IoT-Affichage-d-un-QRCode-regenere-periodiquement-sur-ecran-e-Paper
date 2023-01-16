@@ -147,7 +147,11 @@ Les étapes clés de l'ACV comprennent l'acquisition des matières premières, l
     - Le boîtier en plastique, le PCB et l'écran e-paper peuvent être recyclés pour réutiliser les matières premières. Il ne faut cependant pas oublier que le recyclage est coûteux et pas toujours optimal.
     - Les consommateurs peuvent également choisir de donner leur produit en fin de vie à des organisations caritatives ou à des programmes de recyclage.
   
-Donc notre produit utilise des matériaux recyclable, à une conception pour une longue durée de vie,facile à réparer et de recyclage.
+Donc notre produit utilise des matériaux recyclables, à une conception pour une longue durée de vie,facile à réparer et de recyclage.
+
+## Rechercher et analyser des produits concurrents : 
+
+
 
 
 
