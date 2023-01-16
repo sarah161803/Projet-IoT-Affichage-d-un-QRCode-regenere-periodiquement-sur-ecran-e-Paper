@@ -26,6 +26,9 @@ L'architecture globale de ce système comprend donc plusieurs éléments :
 **Le boîtier idosens sensor** : l'élément physique du système. Il est composé d'une carte électronique et d'un écran e-paper pour afficher des QR codes. Il est alimenté par une source USB.
 
 
+![L'écran Idosens](idosens.jpg)
+
+
 **Une carte STM32f0 discovery** : utilisée pour développer le programme qui est ensuite téléversé sur le boîtier.
 
 
@@ -70,8 +73,6 @@ Le respect de la vie privée est un enjeu crucial pour tout service qui génère
 
 **Batterie / Alimentation :** Pour alimenter l'écran e-paper et les autres composants.
 
-
-![L'écran Idosens](idosens.jpg)
 
 ## Le coût de la BOM de votre produit :
 
