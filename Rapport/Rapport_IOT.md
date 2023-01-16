@@ -23,7 +23,7 @@ On utilise ici un boîtier idosens sensor, le boitier permet d’afficher des qr
 L'architecture globale de ce système comprend donc plusieurs éléments :
 
 
-**Le boîtier idosens sensor** : l'élément physique du système. Il est composé d'une carte électronique et d'un écran e-ink pour afficher des QR codes. Il est alimenté par une source USB.
+**Le boîtier idosens sensor** : l'élément physique du système. Il est composé d'une carte électronique et d'un écran e-paper pour afficher des QR codes. Il est alimenté par une source USB.
 
 
 **Une carte STM32 Nucleo-32** : utilisée pour développer le programme qui est ensuite téléversé sur le boîtier.
