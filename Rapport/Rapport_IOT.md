@@ -149,7 +149,13 @@ Les étapes clés de l'ACV comprennent l'acquisition des matières premières, l
   
 Donc notre produit utilise des matériaux recyclables, à une conception pour une longue durée de vie,facile à réparer et de recyclage.
 
-## Rechercher et analyser des produits concurrents : 
+## Recherche et analyse des produits concurrents : 
+
+| Produit concurrent       | Avantages                 | inconvénients                 |
+|--------------------------|---------------------------|-------------------------------|
+|                   |   | |
+|                 |  | |
+|                 |  | |
 
 
 
