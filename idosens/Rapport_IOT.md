@@ -53,7 +53,7 @@ Le respect de la vie privée est un enjeu crucial pour tout service qui génère
 **Prévention de la fuite des données :** les données stockées dans les QR codes ne sont pas diffusées à des tiers non autorisés. 
 
 
-##L’architecture matérielle du produit : 
+## L’architecture matérielle du produit : 
 
 
 **Boîtier en plastique :** Il sert de protection pour les composants électroniques et de support pour l'écran e-paper.
