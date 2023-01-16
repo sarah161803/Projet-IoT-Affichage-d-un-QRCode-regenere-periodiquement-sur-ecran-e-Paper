@@ -23,16 +23,16 @@ On utilise ici un boîtier idosens sensor, le boitier permet d’afficher des qr
 L'architecture globale de ce système comprend donc plusieurs éléments :
 
 
-Le boîtier idosens sensor, qui est l'élément physique du système. Il est composé d'une carte électronique et d'un écran e-ink pour afficher des QR codes. Il est alimenté par une source USB.
+**Le boîtier idosens sensor** : l'élément physique du système. Il est composé d'une carte électronique et d'un écran e-ink pour afficher des QR codes. Il est alimenté par une source USB.
 
 
-La carte STM32 Nucleo-32, qui est utilisée pour développer le programme qui est ensuite téléversé sur le boîtier.
+**Une carte STM32 Nucleo-32** : utilisée pour développer le programme qui est ensuite téléversé sur le boîtier.
 
 
-Le protocole LoRaWAN, qui est utilisé pour recevoir l’URL et ensuite envoyé le qr code. 
+**Le protocole LoRaWAN** : utilisé pour recevoir l’URL et ensuite envoyer le qr code. 
 
 
-Chirp Stack: serveur qui permet d’afficher les données envoyées par le LoRaWAN de les rendre accessibles à distance pour une analyse ou une utilisation ultérieure.
+**Chirp Stack:** serveur qui permet d’afficher les données envoyées par le LoRaWAN de les rendre accessibles à distance pour une analyse ou une utilisation ultérieure.
 Ensemble, ces éléments forment un système qui permet de collecter des données à partir d'un boîtier physique, de les stocker dans le cloud et de les envoyer au boîtier. 
 
 
