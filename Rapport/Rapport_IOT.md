@@ -109,12 +109,16 @@ Voici une implémentation possible d'un logiciel embarqué pour génèrer un QR 
 
 -Utiliser la fonction pour générer le QR code avec les données souhaitées dans notre cas une URL qui contient une signature,l'identifiant de l'écran Idosens et une date calculée depuis l'epoch de Linux.
 
+- Génerer un QR code chaque 30s par exemple
+
 
 -Afficher le QR code généré sur l'écran Isodense 
 
 
 Il est important de noter que ceci n'est qu'une implémentation possible et qu'il peut y avoir des étapes supplémentaires.Il est également important de suivre les réglementations de l'utilisation de QR code en France et de suivre les normes de sécurité appropriées.
+Le Schéma suivante explique le logiciel embarqué implémenter dans le boîtier 
 
+![Schema explicatif](Schema_explicatif.jpg)
 
 ## 
 
