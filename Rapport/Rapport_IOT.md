@@ -93,7 +93,7 @@ Concernant les coûts de certification Lora Alliance, on peut estimer à environ
 
 ## Une implémentation du logiciel embarqué de l’objet QRCode generation : 
 
-Voici une implémentation possible d'un logiciel embarqué pour génèrer un QR code:
+Voici une implémentation possible d'un logiciel embarqué pour générer le QR code:
 
 - Intégrer une bibliothèque de génération de QR code, comme QRgen, à notre projet.
 
@@ -150,6 +150,7 @@ Les étapes clés de l'ACV comprennent l'acquisition des matières premières, l
 Donc notre produit utilise des matériaux recyclables, à une conception pour une longue durée de vie,facile à réparer et de recyclage.
 
 ## Rechercher et analyser des produits concurrents : 
+
 
 
 
