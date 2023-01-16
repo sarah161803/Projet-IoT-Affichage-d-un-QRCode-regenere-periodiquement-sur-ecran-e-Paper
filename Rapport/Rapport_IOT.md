@@ -125,6 +125,11 @@ Le Schéma suivante explique le logiciel embarqué implémenter dans le boîtier
 ![Schema explicatif](Schema_explicatif.jpg)
 
 
+## Le format des messages LPP :
+
+Le format de messages uplink et downlink échangés pour les objets LoRaWAN est généralement défini en utilisant le format LPP (LoRaWAN Payload Protocol). Qui est un protocole de couche application qui permet d'encoder et de décoder des données pour les transmissions LoRaWAN. Il fournit des fonctionnalités de codage pour un large éventail de types de données, tels que les entiers, les flottants, les chaînes de caractères, les booléens, etc. Dans notre cas, le format de LPP est une chaîne de caractère. LPP nous permet d'encoder et de décoder l’URL pour les transmissions LoRaWAN. Dans notre projet nous n'avons pas réussi à établir la connexion LoRaWan. 
+
+
 ## Analyse du cycle de vie du produit : 
 
 L'analyse du cycle de vie (ACV) de notre produit "durable" et "sobre" consiste à évaluer les impacts environnementaux et sociaux de ce produit tout au long de son cycle de vie, c'est-à-dire de sa conception à sa fin de vie.
