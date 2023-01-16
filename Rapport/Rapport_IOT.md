@@ -109,7 +109,7 @@ Voici une implémentation possible d'un logiciel embarqué pour génèrer un QR 
 
 - Utiliser la fonction pour générer le QR code avec les données souhaitées dans notre cas une URL qui contient une signature,l'identifiant de l'écran Idosens et une date calculée depuis l'epoch de Linux.
 
-- Génerer un QR code chaque 60s par exemple
+- Générer un QR code chaque 60s par exemple
 
 
 - Afficher le QR code généré sur l'écran Isodense 
