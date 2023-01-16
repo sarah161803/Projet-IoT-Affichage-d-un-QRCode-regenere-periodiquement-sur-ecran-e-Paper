@@ -66,7 +66,7 @@ Le respect de la vie privée est un enjeu crucial pour tout service qui génère
 
 
 **Batterie / Alimentation :** Pour alimenter l'écran e-paper et les autres composants.
-
+![L'écran Idosens](écran_idosens.jpg)
 
 ## Le coût de la BOM de votre produit :
 
