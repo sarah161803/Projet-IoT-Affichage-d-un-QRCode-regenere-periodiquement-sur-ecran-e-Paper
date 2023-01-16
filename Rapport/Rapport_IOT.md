@@ -122,7 +122,36 @@ Le Schéma suivante explique le logiciel embarqué implémenter dans le boîtier
 
 ## Les métriques logiciel du logiciel embarqué : 
 
+
+## La durée de vie de la batterie de l’objet : 
+
+
 ## Analyse du cycle de vie du produit : 
+
+L'analyse du cycle de vie (ACV) de notre produit "durable" et "sobre" consiste à évaluer les impacts environnementaux et sociaux de ce produit tout au long de son cycle de vie, c'est-à-dire de sa conception à sa fin de vie.
+Les étapes clés de l'ACV comprennent l'acquisition des matières premières, la production, l'utilisation, l'élimination et le recyclage. Donc l'accent est mis sur les phases suivantes : 
+
+- Phase de recherche et développement : Pour concevoir le produit
+
+
+- Phase de production : Création des PCB, boîtiers et écrans e paper ainsi que leur assemblage
+
+
+- Phase d’utilisation : 
+      -La durée de vie de l'écran e-paper est estimée à environ 5 ans  
+      -ce qui est relativement long comparé aux écrans traditionnels.
+      -Les composants électroniques du produit peuvent être remplacés s'ils sont endommagés ou défectueux.
+      -Des mises à jour logicielles peuvent être effectuées pour améliorer les performances du produit.
+
+
+- Phase de fin de vie : 
+  -Le boîtier en plastique, le PCB et l'écran e-paper peuvent être recyclés pour réutiliser les matières premières. Il ne faut cependant pas oublier que le recyclage est coûteux et pas toujours optimal.
+  -Les consommateurs peuvent également choisir de donner leur produit en fin de vie à des organisations caritatives ou à des programmes de recyclage.
+  
+Donc notre produit utilise des matériaux recyclable, à une conception pour une longue durée de vie,facile à réparer et de recyclage.
+
+
+
 
 
 
