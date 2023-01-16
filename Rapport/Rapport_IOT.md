@@ -138,15 +138,14 @@ Les étapes clés de l'ACV comprennent l'acquisition des matières premières, l
 
 
 - Phase d’utilisation : 
-      -La durée de vie de l'écran e-paper est estimée à environ 5 ans  
-      -ce qui est relativement long comparé aux écrans traditionnels.
-      -Les composants électroniques du produit peuvent être remplacés s'ils sont endommagés ou défectueux.
-      -Des mises à jour logicielles peuvent être effectuées pour améliorer les performances du produit.
+     - La durée de vie de l'écran e-paper est estimée à environ 5 ans ce qui est relativement long comparé aux écrans traditionnels.
+     - Les composants électroniques du produit peuvent être remplacés s'ils sont endommagés ou défectueux.
+     - Des mises à jour logicielles peuvent être effectuées pour améliorer les performances du produit.
 
 
 - Phase de fin de vie : 
-  -Le boîtier en plastique, le PCB et l'écran e-paper peuvent être recyclés pour réutiliser les matières premières. Il ne faut cependant pas oublier que le recyclage est coûteux et pas toujours optimal.
-  -Les consommateurs peuvent également choisir de donner leur produit en fin de vie à des organisations caritatives ou à des programmes de recyclage.
+    - Le boîtier en plastique, le PCB et l'écran e-paper peuvent être recyclés pour réutiliser les matières premières. Il ne faut cependant pas oublier que le recyclage est coûteux et pas toujours optimal.
+    - Les consommateurs peuvent également choisir de donner leur produit en fin de vie à des organisations caritatives ou à des programmes de recyclage.
   
 Donc notre produit utilise des matériaux recyclable, à une conception pour une longue durée de vie,facile à réparer et de recyclage.
 
