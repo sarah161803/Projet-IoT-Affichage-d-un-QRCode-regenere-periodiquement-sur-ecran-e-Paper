@@ -1,4 +1,4 @@
-# Rapport Projet IOT:  Generation de QRCode
+# Rapport Projet IOT:  Génération de QRCode
 
 ## Objectif du projet : 
 Ce projet permet d’envoyer une url d’un serveur à un boîtier e-paper via une liaison LoraWan. Le boîtier génère et affiche par la suite un qr-code correspondant à l’url envoyée. On peut ainsi s'en servir de justificatif de présence. Cela peut permettre de nombreuses utilisations, par exemple : On peut envisager une course d’orientation “nouvelle génération” qui permettrait aux participants de chercher et de scanner les qr-codes. On pourrait aussi faire de la gestion de file d’attente mais aussi de la gestion de rondes de surveillance.
@@ -123,11 +123,6 @@ Voici une implémentation possible d'un logiciel embarqué pour générer le QR 
 Le Schéma suivante explique le logiciel embarqué implémenter dans le boîtier 
 
 ![Schema explicatif](Schema_explicatif.jpg)
-
-## Les métriques logiciel du logiciel embarqué : 
-
-
-## La durée de vie de la batterie du produit : 
 
 
 ## Analyse du cycle de vie du produit : 
