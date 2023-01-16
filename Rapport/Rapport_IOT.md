@@ -26,7 +26,10 @@ L'architecture globale de ce système comprend donc plusieurs éléments :
 **Le boîtier idosens sensor** : l'élément physique du système. Il est composé d'une carte électronique et d'un écran e-paper pour afficher des QR codes. Il est alimenté par une source USB.
 
 
-**Une carte STM32f0 discovery* : utilisée pour développer le programme qui est ensuite téléversé sur le boîtier.
+**Une carte STM32f0 discovery** : utilisée pour développer le programme qui est ensuite téléversé sur le boîtier.
+
+
+![carte STM32f0 ](STM32F0DISCOVERY.jpg)
 
 
 **Le protocole LoRaWAN** : utilisé pour recevoir l’URL et ensuite envoyer le qr code. 
