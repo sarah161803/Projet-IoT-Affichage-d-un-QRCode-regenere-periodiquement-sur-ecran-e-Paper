@@ -153,9 +153,11 @@ Donc notre produit utilise des matériaux recyclables, à une conception pour un
 
 | Produit concurrent       | Avantages                 | inconvénients                 |
 |--------------------------|---------------------------|-------------------------------|
-|                   |   | |
-|                 |  | |
-|                 |  | |
+|IzyFil / Waitlist Me / Table Up| Gestion des rendez-vous : - moins d’attente pour les utilisateurs et les clients - moins de stress pour les agents et les employés - satisfaction de toute le monde|Aucun interaction humain|
+|IzyFil | Gestion de fil d’attent : - Diminue la sensation d'attente et organise l'accueil des clients- Traite de manière équitablement les visiteurs - Informe et sensibilise grâce à l'affichage dynamique intégré|- Aucun interaction humain - Ne priorise pas les personnes en situation prioritaire|
+|IzyFil | Gestion des tickets :  - Simple et accessible, il ne nécessite pas de télécharger une application - Informe du temps d'attente et de l'état de sa demande - Hygiénique les tickets virtuel évite tout contact avec un appareil publique -diminuer l'attente éventuelle - Permet d'avoir moins de matériel à maintenir - Plus économique et écologique, il évite l'impression de tickets papier - Présente une meilleure image des services|Ne priorise pas les personnes en situation prioritaire (personnes âgées , personnes à mobilité réduite ...)|
+
+
 
 
 
