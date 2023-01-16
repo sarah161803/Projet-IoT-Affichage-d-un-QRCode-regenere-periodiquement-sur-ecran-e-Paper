@@ -85,6 +85,16 @@ On a réalisé le prototype à l’aide d’un boîtier idosens comprenant déj�
 **Coûts de fabrication :** Environ 10 € par unité, soit un coût total de 50 000 € pour 5000 exemplaires.
 
 
+## Le coût de certification ETSI du produit et le coût de certification LoRa Alliance du produit : 
+
+Le coût de certification ETSI pour un produit peut varier en fonction de plusieurs facteurs  on peut toutefois estimer un coût de certification d'environ 5000 à 10000€ pour un produit standard.
+
+Concernant les coûts de certification Lora Alliance, on peut estimer à environ 2500€ la certification. 
+
+
+
+
+
 
 
 
