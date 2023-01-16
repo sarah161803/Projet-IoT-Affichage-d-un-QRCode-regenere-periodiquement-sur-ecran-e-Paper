@@ -127,8 +127,7 @@ Le schéma suivant montre le logiciel embarqué implémenter dans le boîtier
 
 ## Le format des messages LPP :
 
-Le format de messages uplink et downlink échangés pour les objets LoRaWAN est généralement défini en utilisant le format LPP (LoRaWAN Payload Protocol). Qui est un protocole de couche application qui permet d'encoder et de décoder des données pour les transmissions LoRaWAN. Il fournit des fonctionnalités de codage pour un large éventail de types de données, tels que les entiers, les flottants, les chaînes de caractères, les booléens, etc. Dans notre cas, le format de LPP est une chaîne de caractère. LPP nous permet d'encoder et de décoder l’URL pour les transmissions LoRaWAN. Dans notre projet nous n'avons pas réussi à établir la connexion LoRaWan. 
-
+Le format de messages uplink et downlink échangés pour les objets LoRaWAN est généralement défini en utilisant le format LPP (LoRaWAN Payload Protocol). Qui est un protocole de couche application qui permet d'encoder et de décoder des données pour les transmissions LoRaWAN. Il fournit des fonctionnalités de codage pour un large éventail de types de données, tels que les entiers, les flottants, les chaînes de caractères, les booléens, etc. Dans notre cas, le format de LPP est une chaîne de caractère. LPP nous permet d'encoder et de décoder l’URL pour les transmissions LoRaWAN.
 ## Estimation de la durée de vie de la batterie du produit : 
 
 Notre objet peut fonctionner sous batterie mais Il est difficile de donner une estimation précise de la durée de vie de la batterie sans plus d'informations sur les spécifications de l'objet, comme sa consommation d'énergie et la capacité de batterie.  Cependant, il est possible de faire des hypothèses :  
