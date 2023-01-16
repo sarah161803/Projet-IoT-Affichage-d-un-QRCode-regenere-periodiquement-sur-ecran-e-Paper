@@ -19,7 +19,22 @@ Il existe également d'autres produits qui gèrent le QR code qui génèrent des
 
 ## L’architecture globale du systèmes : 
 
-On utilise ici un boîtier idosens sensor, le boitier est composé d’une carte électronique et d’une écran e-ink (à encre électronique) qui permet d’afficher des qr code. Elle fait appel à une alimentation de type USB. Pour développer notre produit nous avons utilisé une carte STM32 Nucleo-32, la carte téléverse le programme développé sur le boîtier.
+On utilise ici un boîtier idosens sensor, le boitier permet d’afficher des qr code. Pour développer notre produit nous avons utilisé une carte STM32 Nucleo-32, la carte téléverse le programme développé sur le boîtier.. 
+L'architecture globale de ce système comprend donc plusieurs éléments :
+
+
+Le boîtier idosens sensor, qui est l'élément physique du système. Il est composé d'une carte électronique et d'un écran e-ink pour afficher des QR codes. Il est alimenté par une source USB.
+
+
+La carte STM32 Nucleo-32, qui est utilisée pour développer le programme qui est ensuite téléversé sur le boîtier.
+
+
+Le protocole LoRaWAN, qui est utilisé pour recevoir l’URL et ensuite envoyé le qr code. 
+
+
+Chirp Stack: serveur qui permet d’afficher les données envoyées par le LoRaWAN de les rendre accessibles à distance pour une analyse ou une utilisation ultérieure.
+Ensemble, ces éléments forment un système qui permet de collecter des données à partir d'un boîtier physique, de les stocker dans le cloud et de les envoyer au boîtier. 
+
 
 
 
