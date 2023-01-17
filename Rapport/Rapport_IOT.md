@@ -1,7 +1,7 @@
 # Rapport Projet IOT:  Génération de QRCode
 
 ## Objectif du projet : 
-Ce projet permet d’envoyer une url d’un serveur à un boîtier e-paper via une liaison LoraWan. Le boîtier génère et affiche par la suite un qr-code correspondant à l’url envoyée. On peut ainsi s'en servir de justificatif de présence. Cela peut permettre de nombreuses utilisations, par exemple : On peut envisager une course d’orientation “nouvelle génération” qui permettrait aux participants de chercher et de scanner les qr-codes. On pourrait aussi faire de la gestion de file d’attente mais aussi de la gestion de rondes de surveillance.
+Ce projet permet d’envoyer une clef de chiffrement d’un serveur à un boîtier e-paper via une liaison LoraWan. Le boîtier génère et affiche par la suite un qr-code correspondant à une url datée construite et chiffrée avec cette clef. On peut ainsi s'en servir de justificatif de présence. Cela peut permettre de nombreuses utilisations, par exemple : On peut envisager une course d’orientation “nouvelle génération” qui permettrait aux participants de chercher et de scanner les qr-codes. On pourrait aussi faire de la gestion de file d’attente mais aussi de la gestion de rondes de surveillance.
 Dans ce projet nous utilisons une écran idosens pour afficher le qr code généré. De base l’écran idosens qui a servi pour réaliser un prototype était un système permettant de surveiller des pièces ou des lieux éloignés sans faire appel à une connexion Internet. Il était destiné particulièrement bien aux caves, aux garages, aux abris de jardins, aux remises et autres dépendances. Depuis 2016 le produit n’existe plus dans le marché, donc nous avons récupéré ce produit pour générer des qr-code. 
 
 ## Analyse du marché des produits commerciaux concurrents : 
@@ -17,23 +17,35 @@ Il existe également d'autres produits qui gèrent le QR code qui génèrent des
 
 **TableUp:** une solution de gestion de file d'attente pour les restaurants qui utilise des QR codes pour permettre aux clients de rejoindre une file d'attente virtuelle et de recevoir des notifications lorsqu'une table est disponible.
 
+On a ci dessous un tableau résumant les avantages et inconvénients de ces concurrents : 
+
+| Produit concurrent       | Avantages                 | inconvénients                 |
+|--------------------------|---------------------------|-------------------------------|
+|IzyFil / Waitlist Me / Table Up| Gestion des rendez-vous : - moins d’attente pour les utilisateurs et les clients - moins de stress pour les agents et les employés - satisfaction de toute le monde|Aucun interaction humain|
+|IzyFil | Gestion de fil d’attente : - Diminue la sensation d'attente et organise l'accueil des clients- Traite de manière équitablement les visiteurs - Informe et sensibilise grâce à l'affichage dynamique intégré|- Aucun interaction humain - Ne priorise pas les personnes en situation prioritaire|
+|IzyFil | Gestion des tickets :  - Simple et accessible, il ne nécessite pas de télécharger une application - Informe du temps d'attente et de l'état de sa demande - Hygiénique les tickets virtuel évite tout contact avec un appareil publique -diminuer l'attente éventuelle - Permet d'avoir moins de matériel à maintenir - Plus économique et écologique, il évite l'impression de tickets papier - Présente une meilleure image des services|Ne priorise pas les personnes en situation prioritaire (personnes âgées , personnes à mobilité réduite ...)|
+
 ## L’architecture globale du systèmes : 
 
-On utilise ici un boîtier idosens sensor, le boitier permet d’afficher des qr code. Pour développer notre produit nous avons utilisé une carte STM32f0 discovery, la carte téléverse le programme développé sur le boîtier.. 
+On utilise ici un boîtier idosens sensor, le boitier permet d’afficher des qr code. Pour développer notre produit nous avons utilisé une carte STM32f0 discovery, la carte téléverse le programme développé sur le boîtier.
 L'architecture globale de ce système comprend donc plusieurs éléments :
 
 
 **Le boîtier idosens sensor** : l'élément physique du système. Il est composé d'une carte électronique et d'un écran e-paper pour afficher des QR codes. Il est alimenté par une source USB.
 
-
-![L'écran Idosens](idosens.jpg)
-
+<p align="center">
+  <img src="idosens.jpg" width="200">
+  <br>
+  <i>L'écran Idosens</i>
+</p>
 
 **Une carte STM32f0 discovery** : utilisée pour développer le programme qui est ensuite téléversé sur le boîtier.
 
-
-![carte STM32f0 ](STM32F0DISCOVERY.jpg)
-
+<p align="center">
+  <img src="STM32F0DISCOVERY.jpg" width="400">
+  <br>
+  <i>carte STM32f0</i>
+</p>
 
 **Le protocole LoRaWAN** : utilisé pour recevoir l’URL et ensuite envoyer le qr code. 
 
@@ -99,43 +111,37 @@ Concernant les coûts de certification Lora Alliance, on peut estimer à environ
 
 ## Une implémentation du logiciel embarqué de l’objet QRCode generation : 
 
-Voici une implémentation possible d'un logiciel embarqué pour générer le QR code:
+Nous donnons ci-dessous les points importants du logiciel embarqué pour générer le QR code:
 
-- Intégrer une bibliothèque de génération de QR code, comme QRgen, à notre projet.
+- Intégrer une bibliothèque de génération de QR code, comme celle disponible dans RIOT, à notre projet.
 
-
-- Utiliser l’écran Idosens pour afficher le QR code généré.
-
-
-- Utiliser le protocole LoraWan pour envoyer une signature pour signer un URL qu'on transforme en QR code .
-
-
-- Dans notre code, créer une fonction pour générer le QR en utilisant la bibliothèque de génération de QR code.
-
+- Utiliser le protocole LoraWan pour envoyer une clef d'un serveur et la recevoir sur le boitier pour signer une URL 
 
 - Utiliser la fonction pour générer le QR code avec les données souhaitées dans notre cas une URL qui contient une signature,l'identifiant de l'écran Idosens et une date calculée depuis l'epoch de GPS.
 
-- Générer un QR code chaque 60s par exemple
+- Utiliser l’écran Idosens pour afficher le QR code généré.
 
-
-- Afficher le QR code généré sur l'écran Isodense 
+- Répéter ces opérations toutes les minutes (modifiable)
 
 Le schéma suivant montre le logiciel embarqué implémenter dans le boîtier 
 
-![Schema explicatif](Schema_explicatif.jpg)
-
+<p align="center">
+  <img src="Schema_explicatif.jpg" width="400">
+  <br>
+  <i>Schéma explicatif</i>
+</p>
 
 ## Le format des messages LPP :
 
 Le format de messages uplink et downlink échangés pour les objets LoRaWAN est généralement défini en utilisant le format LPP (LoRaWAN Payload Protocol). Qui est un protocole de couche application qui permet d'encoder et de décoder des données pour les transmissions LoRaWAN. Il fournit des fonctionnalités de codage pour un large éventail de types de données, tels que les entiers, les flottants, les chaînes de caractères, les booléens, etc. Dans notre cas, le format de LPP est une chaîne de caractère. LPP nous permet d'encoder et de décoder l’URL pour les transmissions LoRaWAN.
 ## Estimation de la durée de vie de la batterie du produit : 
 
-Notre objet peut fonctionner sous batterie mais Il est difficile de donner une estimation précise de la durée de vie de la batterie sans plus d'informations sur les spécifications de l'objet, comme sa consommation d'énergie et la capacité de batterie.  Cependant, il est possible de faire des hypothèses :  
-  - Si le boîtier utilise un débit de données de 0.3 kbps, une fréquence de transmission de 1 fois par jour, une puissance d'émission de 14 dBm et une capacité de batterie de 2000mAh, on peut estimer que la durée de vie de la batterie est  d'environ 8 ans.
-  - Si le boitier utilise un débit de données de 0.3 kbps, une fréquence de transmission de 1 fois par heure, une puissance d'émission de 14 dBm et une capacité de batterie de 2000 mAh, on peut dire que le batterie à une durée de vie de la batterie d'environ 6 mois.
-  - Si l'objet utilise un débit de données de 0.3 kbps, une fréquence de transmission de 1 fois par minute, une puissance d'émission de 14 dBm et une capacité de batterie de 2000 mAh,on peut dire que le batterie à une durée de vie de la batterie d'environ 6 mois.
+Notre objet peut fonctionner sous batterie et on peut donner une estimation en prennant pour hypothèses que le débit de données est du 0.3 kbps, que la puissance de transmission est de 14 dBm et que la capacité de la batterie est de 2000 mAh. Ces hypothèses peuvent bien sûr changer en fonction de la batterie mais on obtiendrait en moyenne :
+  - Pour une fréquence de transmission de 1 fois par jour, une durée de vie d'environ 8 ans.
+  - Pour une fréquence de transmission de 1 fois par heure, une durée de vie d'environ 6 mois.
+  - Pour une fréquence de transmission de 1 fois par minute, une durée de vie d'environ 4 mois.
  
-Il est important de noter que ces estimations sont basées sur les paramètres spécifiés et peuvent varier en fonction des spécifications réelles du boîtier et de son utilisation réelle. 
+Dans notre cas, on envisage une utilisation d'une fois par minute on aurait donc une durée de batterie d'environ 4 mois. Bien sûr ce résultat peut être voué à changer selon les conditions du client mais également si ce dernier a la possibilité de le brancher directement à une alimentation
 
 
 ## Analyse du cycle de vie du produit : 
@@ -161,13 +167,6 @@ Les étapes clés de l'ACV comprennent l'acquisition des matières premières, l
   
 Donc notre produit utilise des matériaux recyclables, à une conception pour une longue durée de vie,facile à réparer et à recycler.
 
-## Recherche et analyse des produits concurrents : 
-
-| Produit concurrent       | Avantages                 | inconvénients                 |
-|--------------------------|---------------------------|-------------------------------|
-|IzyFil / Waitlist Me / Table Up| Gestion des rendez-vous : - moins d’attente pour les utilisateurs et les clients - moins de stress pour les agents et les employés - satisfaction de toute le monde|Aucun interaction humain|
-|IzyFil | Gestion de fil d’attent : - Diminue la sensation d'attente et organise l'accueil des clients- Traite de manière équitablement les visiteurs - Informe et sensibilise grâce à l'affichage dynamique intégré|- Aucun interaction humain - Ne priorise pas les personnes en situation prioritaire|
-|IzyFil | Gestion des tickets :  - Simple et accessible, il ne nécessite pas de télécharger une application - Informe du temps d'attente et de l'état de sa demande - Hygiénique les tickets virtuel évite tout contact avec un appareil publique -diminuer l'attente éventuelle - Permet d'avoir moins de matériel à maintenir - Plus économique et écologique, il évite l'impression de tickets papier - Présente une meilleure image des services|Ne priorise pas les personnes en situation prioritaire (personnes âgées , personnes à mobilité réduite ...)|
 
 
 
