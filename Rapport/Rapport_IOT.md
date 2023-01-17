@@ -175,7 +175,7 @@ Pour réaliser ce projet, nous avons utiliser du code qui était déjà dévelop
 
 ## Problèmes rencontrés :
 
-Durant ce projet, nous avons été confrontées à de nombreux problèmes techniques. Les plus impactants ont été l'impossibilité de connecter le boîtier idosens au serveur LoraWan ce qui nous a empêché de faire toute la partie connectique. Enfin, suite à des problèmes que nous pensons être connectiques, le boîtier en fin de projet ne pouvait plus se connecter à l'application CubeProgrammer ce qui nous a empêché de téléverser le programme sur le boitier et ainsi de faire toute la phase de test.
+Durant ce projet, nous avons été confrontées à de nombreux problèmes techniques. Les plus impactants ont été l'impossibilité de connecter le boîtier idosens au serveur LoraWan ce qui nous a empêché de faire toute la partie IoT. Enfin, suite à des problèmes que nous pensons être connectiques, le boîtier en fin de projet ne pouvait plus se connecter à l'application CubeProgrammer ce qui nous a empêché de téléverser le programme sur le boitier et ainsi de faire toute la phase de test.
 
 ## Conclusion :
 
