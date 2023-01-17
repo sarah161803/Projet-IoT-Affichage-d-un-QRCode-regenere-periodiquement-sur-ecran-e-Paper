@@ -1,6 +1,7 @@
 # Rapport Projet IOT:  Génération de QRCode
 
-## Objectif du projet : 
+## Introduction et Objectif du projet : 
+Nous avons travaillé au FabLab durant ce projet afin de réaliser un boitier permettant de donner des justificatifs de présence. 
 Ce projet permet d’envoyer une clef de chiffrement d’un serveur à un boîtier e-paper via une liaison LoraWan. Le boîtier génère et affiche par la suite un qr-code correspondant à une url datée construite et chiffrée avec cette clef. On peut ainsi s'en servir de justificatif de présence. Cela peut permettre de nombreuses utilisations, par exemple : On peut envisager une course d’orientation “nouvelle génération” qui permettrait aux participants de chercher et de scanner les qr-codes. On pourrait aussi faire de la gestion de file d’attente mais aussi de la gestion de rondes de surveillance.
 Dans ce projet nous utilisons une écran idosens pour afficher le qr code généré. De base l’écran idosens qui a servi pour réaliser un prototype était un système permettant de surveiller des pièces ou des lieux éloignés sans faire appel à une connexion Internet. Il était destiné particulièrement bien aux caves, aux garages, aux abris de jardins, aux remises et autres dépendances. Depuis 2016 le produit n’existe plus dans le marché, donc nous avons récupéré ce produit pour générer des qr-code. 
 
@@ -167,12 +168,18 @@ Les étapes clés de l'ACV comprennent l'acquisition des matières premières, l
   
 Donc notre produit utilise des matériaux recyclables, à une conception pour une longue durée de vie,facile à réparer et à recycler.
 
+## Métriques du logiciel embarqué : 
+
+Pour réaliser ce projet, nous avons utiliser du code qui était déjà développé pour le boitier idosens. Nous avons réalisé environ 60 lignes de code pour la génération du qr-code en nous aidant des librairies de RIOT OS. Nous n'avons pas compté dans ces métriques les lignes de code pour la partie LoraWan puisque ces dernières n'ont pas pu être mises à profit.
 
 
+## Problèmes rencontrés :
 
+Durant ce projet, nous avons été confrontées à de nombreux problèmes techniques. Les plus impactants ont été l'impossibilité de connecter le boîtier idosens au serveur LoraWan ce qui nous a empêché de faire toute la partie connectique. Enfin, suite à des problèmes que nous pensons être connectiques, le boîtier en fin de projet ne pouvait plus se connecter à l'application CubeProgrammer ce qui nous a empêché de téléverser le programme sur le boitier et ainsi de faire toute la phase de test.
 
+## Conclusion :
 
-
+Ce projet, bien que diminué par les nombreux problèmes techniques rencontrés a été très enrichissant. Il nous a permis d'apprendre à s'adapter plus rapidement aux problèmes, à valoriser les recherches dans ce qui a déjà été fait afin d'optimiser notre temps mais également a avoir une vision plus globale de la conception d'un produit électronique en étudiant ces coûts de fabrication, ses potentiels concurrents et son cycle de vie.
 
 
 
