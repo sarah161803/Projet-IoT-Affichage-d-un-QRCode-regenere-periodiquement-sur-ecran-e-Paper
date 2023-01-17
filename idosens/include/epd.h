@@ -18,4 +18,8 @@ void epd_draw_default(void);
  */
 void epd_draw_closed(struct tm* ot);
 
+//To get time
+unsigned int getTimeSinceEpoch(void);
+
+
 #endif
